@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div class="jumbtron">
+    <h3>Yazilim Bilimine hosgeldiniz</h3>
+    <p>Bu blogda gelisitiriciler olarak isnanlara yardımcı olabilirsiinz</p>
+</div>
+
+<ul>
+{% for article in articles %}
+<li>Id : {{article.id}}  -  Title : {{article.title}}  -  İcerik : {{article.icerik}}</li>
+
+
+{% endfor %}
+</ul>
+
+{% endblock  %}
